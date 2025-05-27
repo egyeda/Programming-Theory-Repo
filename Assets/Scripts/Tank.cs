@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//INHERITANCE
 public class Tank : Vehicle
 {
 	private float stutterTimer = 0;
@@ -7,7 +8,9 @@ public class Tank : Vehicle
 	{
 		Speed = 5;
 	}
-	
+
+
+	//POLYMORPHISM
 	public override void MoveVehicle(Vector3 direction)
 	{
 		stutterTimer += Time.deltaTime;

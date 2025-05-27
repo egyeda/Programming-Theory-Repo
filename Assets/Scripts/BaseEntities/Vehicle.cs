@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
+	//ENCAPSULATION
 	private float speed;
 	public float Speed
 	{
@@ -24,6 +25,7 @@ public class Vehicle : MonoBehaviour
 		MoveVehicle(Vector3.forward);
 	} 
 
+	//ABSTRACTION
 	public virtual void MoveVehicle(Vector3 direction)
 	{
 		transform.Translate(direction * Speed * Time.deltaTime);
